@@ -1,0 +1,19 @@
+{
+  "clients": [
+    {
+      "client_id": "DEV",
+      "label": "Testing",
+      "description": "Max's personal laptop"
+    },
+    {
+      "client_id": "BEHAVIOR",
+      "label": "Behavior",
+      "description": "Behavioral room training setup"
+    },
+    {
+      "client_id": "IMAGING",
+      "label": "Imaging",
+      "description": "Imaging room training setup"
+    }
+  ]
+}

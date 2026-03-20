@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behavioral Training</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-row">
+        <h1 id="site-title">Gonzales Lab Behavior Training</h1>
+        <div class="hero-status" aria-live="polite">
+          <p class="subtitle-key">Last active session:</p>
+          <p id="site-subtitle" class="subtitle-value">--</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div class="panel-session-meta">
+          <div class="session-feature">
+            <div class="session-feature-heading">
+              <p class="session-feature-label">Animal</p>
+              <button
+                id="session-animal-arrow"
+                class="session-feature-arrow"
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="session-animal-menu"
+                aria-label="Select animal"
+              >
+                &#9662;
+              </button>
+            </div>
+            <p id="session-animal" class="session-feature-value">-</p>
+            <div id="session-animal-menu" class="session-dropdown" role="listbox" hidden></div>
+          </div>
+
+          <div class="session-feature">
+            <div class="session-feature-heading">
+              <p class="session-feature-label">Phase</p>
+              <button
+                id="session-phase-arrow"
+                class="session-feature-arrow"
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="session-phase-menu"
+                aria-label="Select phase"
+              >
+                &#9662;
+              </button>
+            </div>
+            <p id="session-phase" class="session-feature-value">-</p>
+            <div id="session-phase-menu" class="session-dropdown" role="listbox" hidden></div>
+          </div>
+
+          <div class="session-feature">
+            <div class="session-feature-heading">
+              <p class="session-feature-label">Date</p>
+              <button
+                id="session-date-arrow"
+                class="session-feature-arrow"
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="session-date-menu"
+                aria-label="Select date"
+              >
+                &#9662;
+              </button>
+            </div>
+            <p id="session-date" class="session-feature-value">-</p>
+            <div id="session-date-menu" class="session-dropdown" role="listbox" hidden></div>
+          </div>
+
+          <div id="session-client-feature" class="session-feature" hidden>
+            <div class="session-feature-heading">
+              <p class="session-feature-label">Client</p>
+            </div>
+            <p id="session-client" class="session-feature-value">-</p>
+          </div>
+        </div>
+
+        <div id="tab-list" class="tabs" role="tablist" aria-label="Training setups"></div>
+      </div>
+
+      <div class="panel-body">
+        <p id="panel-empty-state" class="panel-empty">No active sessions</p>
+
+        <div id="session-view" class="session-view" hidden>
+          <div class="session-meta">
+            <div class="session-time" aria-live="polite">
+              <p class="session-time-label">Time Elapsed</p>
+              <p id="session-time-elapsed" class="session-time-value">--</p>
+            </div>
+          </div>
+
+          <div class="table-subpanel">
+            <div class="plot-grid">
+              <section class="plot-panel">
+                <div class="plot-header">
+                  <p class="plot-title">Trial Outcomes</p>
+                  <p id="plot-mode-outcome" class="plot-mode">Last 10 Trials</p>
+                </div>
+                <div class="plot-frame">
+                  <svg
+                    id="plot-outcome"
+                    class="plot-svg"
+                    role="img"
+                    aria-label="Trial outcomes plot"
+                  ></svg>
+                </div>
+              </section>
+
+              <section class="plot-panel">
+                <div class="plot-header">
+                  <p class="plot-title">Trial Durations</p>
+                  <p id="plot-mode-duration" class="plot-mode">Last 10 Trials</p>
+                </div>
+                <div class="plot-frame">
+                  <svg
+                    id="plot-duration"
+                    class="plot-svg"
+                    role="img"
+                    aria-label="Trial durations plot"
+                  ></svg>
+                </div>
+              </section>
+
+              <section class="plot-panel">
+                <div class="plot-header">
+                  <p class="plot-title">Net Success Rate</p>
+                  <p id="plot-mode-rate" class="plot-mode">Last 10 Trials</p>
+                </div>
+                <div class="plot-frame">
+                  <svg
+                    id="plot-rate"
+                    class="plot-svg"
+                    role="img"
+                    aria-label="Net success rate plot"
+                  ></svg>
+                </div>
+              </section>
+            </div>
+            <p id="table-placeholder" class="table-placeholder" hidden>Waiting for trial data</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

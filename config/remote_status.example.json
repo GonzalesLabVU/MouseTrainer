@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "base_url": "https://your-project.vercel.app",
+  "api_key": "replace-with-shared-api-key",
+  "timeout_s": 1.5,
+  "heartbeat_interval_s": 2.0,
+  "stale_after_s": 10.0
+}

@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "manifest_url": "https://raw.githubusercontent.com/GonzalesLabVU/MouseTrainer/main/config/update_manifest.json",
+  "timeout_s": 5.0,
+  "channel": "stable",
+  "sync_config": true,
+  "allow_app_update": true,
+  "allow_launcher_update": true,
+  "allow_sensitive_config_sync": false,
+  "retain_versions": 2
+}

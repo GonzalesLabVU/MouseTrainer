@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "channel": "stable",
+  "generated_at": "2026-03-20T00:00:00Z",
+  "config": {
+    "version": "2026-03-20.1",
+    "files": [
+      {
+        "path": "animal_map.json",
+        "url": "https://raw.githubusercontent.com/OWNER/REPO/main/config/animal_map.json",
+        "sha256": "replace-with-sha256"
+      },
+      {
+        "path": "remote_status.json",
+        "url": "https://raw.githubusercontent.com/OWNER/REPO/main/config/remote_status.json",
+        "sha256": "replace-with-sha256"
+      }
+    ]
+  },
+  "app": {
+    "version": "0.1.1",
+    "package_url": "https://github.com/OWNER/REPO/releases/download/v0.1.1/MouseTrainerClient-0.1.1-win64.zip",
+    "package_sha256": "replace-with-package-sha256",
+    "launch_exe": "MouseTrainerClient.exe",
+    "bundle_dir": "MouseTrainerClient-0.1.1"
+  },
+  "launcher": {
+    "version": "0.1.1",
+    "url": "https://github.com/OWNER/REPO/releases/download/v0.1.1/MouseTrainer.exe",
+    "sha256": "replace-with-launcher-sha256"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "channel": "stable",
+  "generated_at": "2026-03-20T00:00:00Z",
+  "config": {
+    "version": "2026-03-20.1",
+    "files": [
+      {
+        "path": "animal_map.json",
+        "url": "https://raw.githubusercontent.com/GonzalesLabVU/MouseTrainer/main/config/animal_map.json",
+        "sha256": "b548cdfc49d4c3543a8fc80cb9c4abe99eecf90c3ef8a02a41649468353d62cc"
+      }
+    ]
+  },
+  "app": {
+    "version": "0.1.0",
+    "package_url": "https://github.com/GonzalesLabVU/MouseTrainer/releases/download/v0.1.0/MouseTrainerClient-0.1.0-win64.zip",
+    "package_sha256": "9124d021ea719e06f62aef8b81e3016b7d27bc93a46ebcba879fd68f2c521283",
+    "launch_exe": "MouseTrainerClient.exe",
+    "bundle_dir": "MouseTrainerClient-0.1.0"
+  },
+  "launcher": {
+    "version": "0.1.0",
+    "url": "https://github.com/GonzalesLabVU/MouseTrainer/releases/download/v0.1.0/MouseTrainer.exe",
+    "sha256": "64ae5607818db7311d3919af6e54fad8a538f930ed2c2bc08bf732189d7ef321"
+  }
+}

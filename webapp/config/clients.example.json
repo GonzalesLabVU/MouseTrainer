@@ -1,0 +1,14 @@
+{
+  "clients": [
+    {
+      "client_id": "RIG_01",
+      "label": "Rig 01",
+      "description": "Training room A"
+    },
+    {
+      "client_id": "RIG_02",
+      "label": "Rig 02",
+      "description": "Training room B"
+    }
+  ]
+}
